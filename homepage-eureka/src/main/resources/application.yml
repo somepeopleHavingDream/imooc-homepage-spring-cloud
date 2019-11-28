@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: imooc-homepage-eureka
+
+server:
+  port: 8000
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    # 表示是否从Eureka Server中获取注册信息，默认是true
+    fetch-registry: false
+    # 表示是否将自己注册到Eureka Server，默认是true
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
