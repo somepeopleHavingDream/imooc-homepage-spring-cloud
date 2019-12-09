@@ -1,4 +1,4 @@
-package org.yangxin.imoochomepage;
+package org.yangxin.imoochomepage.vo;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class UserInfo {
+public class UserInfoVO {
     /**
      * Id
      */
@@ -29,7 +29,7 @@ public class UserInfo {
      */
     private String email;
 
-    public static UserInfo invalid() {
-        return new UserInfo(-1L, "", "");
+    public static UserInfoVO invalid() {
+        return new UserInfoVO(-1L, "", "");
     }
 }

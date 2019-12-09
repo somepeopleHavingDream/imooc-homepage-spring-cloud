@@ -4,8 +4,8 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.yangxin.imoochomepage.CourseInfo;
-import org.yangxin.imoochomepage.CourseInfoRequest;
+import org.yangxin.imoochomepage.vo.CourseInfoVO;
+import org.yangxin.imoochomepage.request.CourseInfoRequest;
 
 import java.util.List;
 
@@ -24,11 +24,11 @@ public interface CourseClient {
      * @return 课程信息
      */
     @GetMapping("/homepage-course/course/get")
-    CourseInfo getCourseInfo(Long id);
+    CourseInfoVO getCourseInfo(Long id);
 
     /**
      * 查询多个课程的信息
      */
     @PostMapping("/homepage-course/course/list")
-    List<CourseInfo> listCourseInfo(@RequestBody CourseInfoRequest courseInfoRequest);
+    List<CourseInfoVO> listCourseInfo(@RequestBody CourseInfoRequest courseInfoRequest);
 }

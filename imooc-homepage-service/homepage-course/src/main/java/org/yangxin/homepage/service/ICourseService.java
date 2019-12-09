@@ -1,7 +1,7 @@
 package org.yangxin.homepage.service;
 
-import org.yangxin.imoochomepage.CourseInfo;
-import org.yangxin.imoochomepage.CourseInfoRequest;
+import org.yangxin.imoochomepage.vo.CourseInfoVO;
+import org.yangxin.imoochomepage.request.CourseInfoRequest;
 
 import java.util.List;
 
@@ -18,10 +18,10 @@ public interface ICourseService {
      * @param id id
      * @return 课程信息
      */
-    CourseInfo getCourseInfo(Long id);
+    CourseInfoVO getCourseInfo(Long id);
 
     /**
      * 通过Ids，获取课程信息
      */
-    List<CourseInfo> listCourseInfo(CourseInfoRequest courseInfoRequest);
+    List<CourseInfoVO> listCourseInfo(CourseInfoRequest courseInfoRequest);
 }

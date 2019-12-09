@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.yangxin.homepage.service.ICourseService;
-import org.yangxin.imoochomepage.CourseInfo;
-import org.yangxin.imoochomepage.CourseInfoRequest;
+import org.yangxin.imoochomepage.vo.CourseInfoVO;
+import org.yangxin.imoochomepage.request.CourseInfoRequest;
 
 import java.util.Collections;
 import java.util.List;
@@ -37,18 +37,18 @@ public class HomepageCourseController {
      * @return 课程信息
      */
     @GetMapping("/course/get")
-    public CourseInfo getCourseInfo(Long id) {
+    public CourseInfoVO getCourseInfo(Long id) {
         log.info("<homepage-course>: get course -> {}", id);
 
         if (id == null) {
-            return CourseInfo.invalid();
+            return CourseInfoVO.invalid();
         }
 
         return courseService.getCourseInfo(id);
     }
 
     @PostMapping("/course/list")
-    public List<CourseInfo> listCourseInfo(@RequestBody CourseInfoRequest courseInfoRequest) {
+    public List<CourseInfoVO> listCourseInfo(@RequestBody CourseInfoRequest courseInfoRequest) {
         log.info("<homepage-course>: get courses -> {}", JSON.toJSONString(courseInfoRequest));
 
         if (courseInfoRequest == null) {

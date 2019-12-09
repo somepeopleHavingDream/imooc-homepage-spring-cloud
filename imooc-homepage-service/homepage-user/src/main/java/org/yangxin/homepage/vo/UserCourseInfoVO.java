@@ -3,8 +3,8 @@ package org.yangxin.homepage.vo;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.yangxin.imoochomepage.CourseInfo;
-import org.yangxin.imoochomepage.UserInfo;
+import org.yangxin.imoochomepage.vo.CourseInfoVO;
+import org.yangxin.imoochomepage.vo.UserInfoVO;
 
 import java.util.Collections;
 import java.util.List;
@@ -22,17 +22,17 @@ public class UserCourseInfoVO {
     /**
      * 用户信息
      */
-    private UserInfo userInfo;
+    private UserInfoVO userInfoVO;
 
     /**
      * 课程信息
      */
-    private List<CourseInfo> courseInfos;
+    private List<CourseInfoVO> courseInfoVOS;
 
     /**
      * 不合法
      */
     public static UserCourseInfoVO invalid() {
-        return new UserCourseInfoVO(UserInfo.invalid(), Collections.emptyList());
+        return new UserCourseInfoVO(UserInfoVO.invalid(), Collections.emptyList());
     }
 }

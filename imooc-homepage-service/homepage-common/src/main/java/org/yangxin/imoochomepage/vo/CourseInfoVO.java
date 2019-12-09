@@ -1,4 +1,4 @@
-package org.yangxin.imoochomepage;
+package org.yangxin.imoochomepage.vo;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -15,7 +15,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class CourseInfo {
+public class CourseInfoVO {
     /**
      * Id
      */
@@ -41,8 +41,8 @@ public class CourseInfo {
      */
     private String courseIntroduction;
 
-    public static CourseInfo invalid() {
-        return new CourseInfo(-1L,
+    public static CourseInfoVO invalid() {
+        return new CourseInfoVO(-1L,
                 "",
                 "",
                 "",

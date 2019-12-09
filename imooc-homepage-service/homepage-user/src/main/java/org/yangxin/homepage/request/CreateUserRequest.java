@@ -1,4 +1,4 @@
-package org.yangxin.homepage.vo;
+package org.yangxin.homepage.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -14,7 +14,7 @@ import org.springframework.util.StringUtils;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class CreateUserRequestVO {
+public class CreateUserRequest {
     /**
      * 用户名
      */

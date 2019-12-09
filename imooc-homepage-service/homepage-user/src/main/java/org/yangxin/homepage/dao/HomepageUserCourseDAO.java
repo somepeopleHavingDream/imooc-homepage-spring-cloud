@@ -1,5 +1,6 @@
 package org.yangxin.homepage.dao;
 
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.yangxin.homepage.entity.HomepageUserCourse;
 
 import java.util.List;
@@ -10,7 +11,7 @@ import java.util.List;
  * @author yangxin
  * 2019/12/06 15:52
  */
-public interface HomepageUserCourseDAO {
+public interface HomepageUserCourseDAO extends JpaRepository<HomepageUserCourse, Long> {
     /**
      * 通过用户Id，寻找用户课程记录
      *

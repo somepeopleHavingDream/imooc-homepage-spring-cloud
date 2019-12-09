@@ -13,8 +13,8 @@ import org.yangxin.homepage.Application;
 import org.yangxin.homepage.dao.HomepageCourseDAO;
 import org.yangxin.homepage.entity.HomepageCourse;
 import org.yangxin.homepage.service.ICourseService;
-import org.yangxin.imoochomepage.CourseInfo;
-import org.yangxin.imoochomepage.CourseInfoRequest;
+import org.yangxin.imoochomepage.vo.CourseInfoVO;
+import org.yangxin.imoochomepage.request.CourseInfoRequest;
 
 import java.util.List;
 
@@ -35,19 +35,19 @@ public class CourseServiceImplTest {
 
     @Test
     public void getCourseInfo() {
-        CourseInfo courseInfo = courseService.getCourseInfo(1L);
-        log.info("courseInfo: [{}]", JSON.toJSONString(courseInfo));
+        CourseInfoVO courseInfoVO = courseService.getCourseInfo(1L);
+        log.info("courseInfoVO: [{}]", JSON.toJSONString(courseInfoVO));
 
-        Assert.assertNotNull(courseInfo);
+        Assert.assertNotNull(courseInfoVO);
     }
 
     @Test
     public void listCourseInfo() {
-        List<CourseInfo> courseInfoList = courseService
+        List<CourseInfoVO> courseInfoVOList = courseService
                 .listCourseInfo(new CourseInfoRequest(Lists.newArrayList(1L, 2L)));
-        log.info("courseInfoList: [{}]", JSON.toJSONString(courseInfoList));
+        log.info("courseInfoVOList: [{}]", JSON.toJSONString(courseInfoVOList));
 
-        Assert.assertNotNull(courseInfoList);
+        Assert.assertNotNull(courseInfoVOList);
     }
 
     @Test
