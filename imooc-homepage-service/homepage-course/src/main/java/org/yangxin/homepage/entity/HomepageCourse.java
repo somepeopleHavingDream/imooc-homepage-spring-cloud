@@ -1,6 +1,7 @@
 package org.yangxin.homepage.entity;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.CreatedDate;
@@ -22,6 +23,7 @@ import java.util.Date;
 @Entity
 @EntityListeners(AuditingEntityListener.class)
 @Table(name = "homepage_course")
+@Builder
 public class HomepageCourse {
     /**
      * id
