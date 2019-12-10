@@ -32,6 +32,8 @@ public class HomepageCourseController {
 
     /**
      * 通过Id，获取课程信息
+     * 127.0.0.1:7001/homepage-course/course/get?id=
+     * 127.0.0.1:9000/imooc/homepage-course/course/get?id=
      *
      * @param id id
      * @return 课程信息
