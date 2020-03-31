@@ -25,6 +25,7 @@ import java.util.Date;
 @Table(name = "homepage_course")
 @Builder
 public class HomepageCourse {
+
     /**
      * id
      */
