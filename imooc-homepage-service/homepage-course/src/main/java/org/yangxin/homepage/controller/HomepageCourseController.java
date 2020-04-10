@@ -23,6 +23,7 @@ import java.util.List;
 @Slf4j
 @RestController
 public class HomepageCourseController {
+
     private final ICourseService courseService;
 
     @Autowired
