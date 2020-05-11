@@ -35,3 +35,7 @@ CREATE TABLE IF NOT EXISTS `imooc_homepage_sc`.`homepage_user_course` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `key_user_course` (`user_id`,`course_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='用户课程表';
+
+insert into homepage_user(username, email) values('qinyi', 'qinyi@mooc.com');
+insert into homepage_course(course_name) values ('JDK11&12新特性解读'), ('基于SpringCloud微服务架构 广告系统设计与实现');
+insert into homepage_user_course(user_id, course_id) values (8, 8), (8, 9);
