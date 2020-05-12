@@ -19,6 +19,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 @EnableEurekaClient
 @SpringBootApplication
 public class HomepageUserApplication {
+
     public static void main(String[] args) {
         SpringApplication.run(HomepageUserApplication.class, args);
     }

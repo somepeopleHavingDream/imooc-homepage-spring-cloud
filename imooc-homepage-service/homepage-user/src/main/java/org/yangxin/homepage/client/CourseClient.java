@@ -17,6 +17,7 @@ import java.util.List;
  */
 @FeignClient(value = "eureka-client-homepage-course", fallback = CourseClientHystrix.class)
 public interface CourseClient {
+
     /**
      * 查询单个课程的信息
      *
