@@ -15,6 +15,7 @@ import java.util.List;
  */
 @Component
 public class CourseClientHystrix implements CourseClient {
+
     @Override
     public CourseInfoVO getCourseInfo(Long id) {
         return CourseInfoVO.invalid();

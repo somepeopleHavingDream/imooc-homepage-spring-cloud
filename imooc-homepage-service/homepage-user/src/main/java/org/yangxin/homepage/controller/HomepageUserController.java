@@ -21,6 +21,7 @@ import org.yangxin.imoochomepage.vo.UserInfoVO;
 @Slf4j
 @RestController
 public class HomepageUserController {
+
     private final IUserService userService;
 
     @Autowired
