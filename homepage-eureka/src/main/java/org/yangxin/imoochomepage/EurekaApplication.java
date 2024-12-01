@@ -5,8 +5,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 /**
- * 1. 只需要使用@EnableEurekaServer注解，就可以让应用变为Eureka Server
- * 2. pom文件中对应到spring-cloud-starter-netflix-eureka-server
+ * 1. 只需要使用 @EnableEurekaServer 注解，就可以让应用变为 Eureka Server
+ * 2. pom 文件中对应到 spring-cloud-starter-netflix-eureka-server
  *
  * @author yangxin
  * 2019/11/27 11:49
